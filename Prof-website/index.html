@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ikon kullanabilmek için-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Restorant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="#home" class="active"> Anasayfa</a>
+            <a href="#menu"> Menü</a>
+            <a href="#urunler"> Ürünler</a>
+            <a href="#hakkinda"> Hakkında</a>
+            <a href="#yorumlar"> Yorumlar</a>
+            <a href="#iletisim"> İletişim</a>
+            <a href="#blog"> Blog</a>
+        </nav>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i> <!--ikonlar-->
+            </button>
+            <button id="cart-btn">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Arama Yapın...">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-1.png" alt="menü">
+                <div class="content">
+                    <h3>Sepet Öğesi 1</h3>
+                    <div class="price">
+                        35 TL/-
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-2.png" alt="menü">
+                <div class="content">
+                    <h3>Sepet Öğesi 2</h3>
+                    <div class="price">
+                        30 TL/-
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-3.png" alt="menü">
+                <div class="content">
+                    <h3>Sepet Öğesi 3</h3>
+                    <div class="price">
+                        25 TL/-
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <i class="fas fa-times"></i>
+                <img src="images/menu-4.png" alt="menü">
+                <div class="content">
+                    <h3>Sepet Öğesi 4</h3>
+                    <div class="price">
+                        40 TL/-
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Şimdi Öde</a>
+        </div>
+    </header>
+
+    <!-- Home kısmı-->
+    <section class="home" id="home">
+        <div class="content">
+            
+            <h3>SİZİN İÇİN DÜNYANIN EN GÜZEL PASTALARINI ÜRETİYORUZ...
+            </h3>
+            <br>
+        <P>
+            Ağızda eriyen yumuşak tatlılar, içimizi serinletecek dondurmalar, kahve aromalı tatlar, meyveli şekerlemeler...
+            <br>
+            Sütlü ve şerbetli tatlılarımızla sizleri Türk mutfağının en sevilen tatlılarıyla buluşturuyoruz.
+            <br>
+        </p>
+        <a href="#" class="btn">Şimdi Sipariş Ver</a>
+        </div>
+    </section>
+
+    <!-- Menü kısmı-->
+    <section class="menu" id="menu">
+        <h1 class="heading"><span> Menü</span></h1>
+        <div class="box-container">
+            <div class="box">
+
+                <div class="box-head">
+                    <img src="images/menu-11.png" alt="Menü">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Orman Meyveli Pasta</h3>
+                    <div class="price">120 TL <span>150 TL</span></div>
+                </div>
+
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box-head">
+                    <img src="images/menu-21.png" alt="Menü">
+                    <span class="menu-category">DONDURMA</span>
+                    <h3> Meyveli Dondurma</h3>
+                    <div class="price">15 TL <span>25 TL</span></div>
+                </div>
+
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box-head">
+                    <img src="images/menu-31.png" alt="Menü">
+                    <span class="menu-category">ÇİKOLATALI SUFLE</span>
+                    <h3>Çikolata Soslu Sufle</h3>
+                    <div class="price">30 TL <span>35 TL</span></div>
+                </div>
+
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box-head">
+                    <img src="images/menu-41.png" alt="Menü">
+                    <span class="menu-category">BAKLAVA</span>
+                    <h3>Antep Fıstıklı Baklava</h3>
+                    <div class="price">100 TL <span>120 TL</span></div>
+                </div>
+
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ürün kısmı-->
+    <section class="products" id="urunler">
+        <h1 class="heading"><span> Ürünler</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">CupCake</span>
+                    <a href="#" class="name">Rengarenk Cupcake</a>
+                </div>
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">
+                            24 TL
+                        </b>
+                        <span class="amount">
+                            50gr / 100 Cal
+                        </span>
+                    </div>
+                    <div class="product-btn">
+                        <!--yanındaki artı butonu için-->
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Makaron</span>
+                    <a href="#" class="name">Rengarenk Makaronlar</a>
+                </div>
+                <div class="image">
+                    <img src="images/product-2.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">
+                            70 TL
+                        </b>
+                        <span class="amount">
+                            20gr / 80 Cal
+                        </span>
+                    </div>
+                    <div class="product-btn">
+                        <!--yanındaki artı butonu için-->
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Cheesecake</span>
+                    <a href="#" class="name">Frambuazlı Cheesecake</a>
+                </div>
+                <div class="image">
+                    <img src="images/product-3.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">
+                            40 TL
+                        </b>
+                        <span class="amount">
+                            100gr / 350 Cal
+                        </span>
+                    </div>
+                    <div class="product-btn">
+                        <!--yanındaki artı butonu için-->
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Hakkında kısmı-->
+    <section class="about" id="hakkinda">
+        <h1 class="heading"><span> Hakkında</span></h1>
+        <div class="row">
+            <div class="image"><img src="images/about.jpg" alt="about"></div>
+            <div class="content">
+                <h3>İnanılmaz Lezzetlerimize Bir Şans Vermeye Ne Dersiniz?</h3>
+                <p>
+                    Pastalarımız birbirinden çeşitli ve lezzetli seçenekler ile özel günlerinize renk katacak alternatiflere sahip. Damak zevkinize zevk katacak bu tatları denemenizi bekler iyi günler dileriz...
+                </p> <br>
+                <a href="#" class="btn">Daha Fazla</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Yorumlar kısmı-->
+    <section class="review" id="yorumlar">
+        <h1 class="heading"><span> Yorumlar</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/quote.png" alt="Yorum">
+                <p>
+                    Tercih ettiğim ilk günden beri aşırı derecede memnunum. hiç bir zaman bizi hayal kırıklığına uğratmayan pastacımıza teşekkürler.
+                </p>
+                <img src="images/avatar-1.png" alt="" class="user">
+                <h3>Melike Şahin</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote.png" alt="Yorum">
+                <p>
+                    Aşırı derecede güzel pastaları ve tatlılarıyla midemizi şenlendirmek istediğimizde, ailecek kendimizi burada buluyoruz.
+                </p>
+                <img src="images/avatar-2.png" alt="" class="user">
+                <h3>Ahmet Demir</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote.png" alt="Yorum">
+                <p>
+                    Ba-yıl-dım. Tek kelimeyle harika olan bu tatlıları denemenizi kesinlikle tavsiye ediyorum.
+                    <br><br>
+                </p>
+                <img src="images/avatar-3.png" alt="" class="user">
+                <h3>Pınar Kuş</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--İletişim kısmı-->
+    <section class="contact" id="iletisim">
+        <h1 class="heading"><span> İletişim</span></h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.6100106156396!2d28.975764015414757!3d41.03378737929821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab761b76c7cf7%3A0xd59a76ee7cacf701!2zxLBzdGlrbGFsIENkLiwgQmV5b8SfbHUvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1659623214734!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form> 
+                <h3>Bizimle İletişime Geçin</h3>
+                <div class="inputbox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Ad">
+
+                </div>
+
+                <div class="inputbox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Mail">
+                </div>
+
+                <div class="inputbox">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" placeholder="Numara">
+                </div>
+                <input type="submit" class="btn" value="Şimdi İletişime Geç">
+            </form>
+        </div>
+    </section>
+
+    <!--Blog kısmı-->
+    <section class="blog" id="blog">
+        <h1 class="heading"><span> Blog</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="blog">
+                </div>
+                <div class="content"><a href="#" class="title">Bu lezzetli tatlı nasıl yapılır?</a>
+                <span>by admin/ 10.05.2020</span>
+                <p>Biraz süt, biraz meyve, biraz şeker, bolca sevgi.. hepsini karıştırıp buzlukta 3 saat bekletin. Ve işte karşınızda bu sıcaklarda içinizi serinletecek buz gibi leziz bir dondurma.</p>
+                <a href="#" class="btn">Oku</a>
+            </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="blog">
+                </div>
+                <div class="content"><a href="#" class="title">Buz gibi Milkshake'ler</a>
+                <span>by admin/ 08.08.2020</span>
+                <p> Gelin hep birlikte rengarenk birbirinden güzel Milkshake'leri inceleyelim...</p><br><br><br><br><br>
+                <a href="#" class="btn">Oku</a>
+            </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="blog">
+                </div>
+                <div class="content"><a href="#" class="title">Lokmalık Donutlar</a>
+                <span>by admin/ 24.01.2022</span>
+                <p>Ben şerbetli tatlıyı da sütlü tatlıyı da çok severim, ikisi arasında ayrım yapamam diyenlerdenseniz buyrun sizi bu köşeye doğru bir yolculuğa çıkartalım.</p>
+                <a href="#" class="btn">Oku</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer kısmı-->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Ara">
+            <button class="btn btn-primary">Arama</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#" class="active"> Anasayfa</a>
+            <a href="#"> Menü</a>
+            <a href="#"> Ürünler</a>
+            <a href="#"> Hakkında</a>
+            <a href="#"> Yorumlar</a>
+            <a href="#"> İletişim</a>
+            <a href="#"> Blog</a>
+        </div>
+        <div class="credit">
+            Created By <span> Nazlı Topkara</span>| All Right Reserved
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
